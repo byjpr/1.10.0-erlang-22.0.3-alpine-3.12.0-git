@@ -5,7 +5,6 @@ RUN apk add --no-cache rust
 RUN apk add --update --no-cache netcat-openbsd
 
 RUN apk add curl gnupg coreutils
-RUN curl -Os https://uploader.codecov.io/latest/alpine/codecov
 
 RUN curl https://keybase.io/codecovsecurity/pgp_keys.asc | gpg --import # One-time step
 RUN curl -Os https://uploader.codecov.io/latest/alpine/codecov
